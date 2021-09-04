@@ -1,33 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<%- include('../partials/start') %>
 
-	<title>About | Small Project</title>
-
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/app.css">
-
-	<script type="text/javascript" src="./js/boostrap.min.js"></script>
-	<script type="text/javascript" src="./js/app.js"></script>
-</head>
-<body>
 	<main>
+		<%- include('../partials/header') %>
+		
 		<section>
-				<div class="container.py-5">
+				<div class="container py-5">
 					<h1> This is the About Page</h1>
 
 					<a href="/about">About</a>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<% facts.forEach(function(fact) { %>
+							<li><%= fact %></li>
+						<% }); %>
+					</ul>
 				</div>
-		<section>
+		</section>
 	</main>
-</body>
-</html>
+
+<%- include('../partials/end') %>

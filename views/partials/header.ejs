@@ -1,0 +1,21 @@
+<header>
+	<nav class="navbar navbar-expand-lg container">
+		<a class="navbar-brand" href="/">
+			<h1>Small Project</h1>
+		</a>
+
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<span class="navbar-toggler-icon">
+				<i class="fa fa-bars"></i>
+			</span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link <%= active === 'home' ? 'active' : '' %>" href="/">Home</a>
+
+				<a class="nav-item nav-link <%= active === 'about' ? 'active' : '' %>" href="/about">About</a>
+			</div>
+		</div>
+	</nav>
+</header>

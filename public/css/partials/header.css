@@ -1,0 +1,28 @@
+header {
+	background-color: #ccc;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+header a {
+	color:  white;
+}
+
+header .navbar-brand:hover {
+	color:  firebrick;
+}
+
+header .nav-link {
+	color: white;
+}
+
+header .nav-link:hover {
+	background-color: #aaa;
+	color: firebrick;
+}
+
+header .nav-link.active {
+	color: firebrick;
+}
