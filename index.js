@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 const routes = require('./routes');
 routes(app);
 
-const port = process.env.PORT ? process.env.PORT : 3000;
+const port = process.env.PORT ? process.env.PORT : 80;
 
 server.listen(port, () => {
 	console.log(`Listening on *:${port}...`);
