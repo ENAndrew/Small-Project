@@ -1,0 +1,45 @@
+<%- include('../partials/start') %>
+
+	<main class="launches-wrapper">
+		<%- include('../partials/header') %>
+
+		<section class="info padded">
+				<div class="container">
+					<h1>SpaceX Launches</h1>
+
+					<div class="row align-items-center">
+						<div class="col-lg-4 text-center">
+							<img class="img-fluid" src="<%- launches.links.patch.small %>">
+						</div>
+
+						<div class="col-lg-8">
+							<p><%- launches.details %></p>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section class="read-more padded">
+			<div class="container text-center">
+				<a target="_blank" href="<%- launches.links.reddit.campaign %>">
+					<button class="button">Read More</button>
+				</a>
+			</div>
+		</section>
+
+		<% if (launches.links.youtube_id) { %>
+			<section class="video padded">
+				<div class="container text-center">
+					<div class="video-wrapper">
+						<iframe id="ytplayer"
+							type="text/hmtl"
+							src="https://www.youtube.com/embed/<%- launches.links.youtube_id %>"
+							frameborder="0">
+						</iframe>
+					</div>
+				</div>
+			</section>
+		<% } %>
+	</main>
+
+<%- include('../partials/end') %>

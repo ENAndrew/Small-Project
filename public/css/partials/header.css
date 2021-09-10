@@ -11,7 +11,7 @@ header a {
 }
 
 header .navbar-brand:hover {
-	color:  firebrick;
+	color:  rebeccapurple;
 }
 
 header .nav-link {
@@ -20,9 +20,9 @@ header .nav-link {
 
 header .nav-link:hover {
 	background-color: #aaa;
-	color: firebrick;
+	color: rebeccapurple;
 }
 
 header .nav-link.active {
-	color: firebrick;
+	color: rebeccapurple;
 }

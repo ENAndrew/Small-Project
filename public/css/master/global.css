@@ -1,0 +1,14 @@
+body, html {
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin-bottom: 2rem;
+    line-height: 1.5em;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
